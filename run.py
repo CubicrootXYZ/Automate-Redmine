@@ -4,7 +4,7 @@ import configparser,os,datetime,json
 import closer as close
 from datetime import timedelta as td
 
-os.chdir("D:/github_repos/Automate-Redmine")
+os.chdir("/opt/app")
 
 class AutomateRedmine:
     def __init__(self):
