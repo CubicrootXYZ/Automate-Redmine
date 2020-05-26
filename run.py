@@ -2,6 +2,7 @@ from redminelib import Redmine
 import re
 import configparser,os,datetime,json
 import closer as close
+import telegrambot
 from datetime import timedelta as td
 
 os.chdir("/opt/app")
@@ -27,6 +28,7 @@ class AutomateRedmine:
 
     def run(self):
         lastrun_closer = datetime.datetime.now()-td(days=10)
+        
         while True:
             now = datetime.datetime.now()
 
